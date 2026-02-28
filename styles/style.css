@@ -1,0 +1,82 @@
+h1 {
+    color:black;
+    background-color: cornflowerblue;
+    font-size: 70px;
+    padding: 20px;
+}
+
+.titulo_index {
+    border-radius: 20px;
+    text-align: center;
+}
+
+ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tamano {
+    font-size: 25px;
+}
+
+.tamano_contacto {
+    font-size: 25px;
+}
+
+.cuidado_seccion {
+    font-size: 25px;
+}
+
+.maquillaje_seccion {
+    font-size: 25px;
+}
+
+.medios_seccion {
+    font-size: 25px;
+}
+
+.ofertas_seccion {
+    font-size: 25px;
+}
+
+.suplementos_seccion {
+    font-size: 25px;
+}
+
+.venta_libre_seccion {
+    font-size: 25px;
+}
+
+.contacto {
+    text-align: center;
+}
+
+.cuidado {
+    text-align: center;
+}
+
+.maquillaje {
+    text-align: center;
+}
+
+.medios {
+    text-align: center;
+}
+
+.ofertas {
+    text-align: center;
+}
+
+.suplementos {
+    text-align: center;
+}
+
+.venta_libre {
+    text-align: center;
+}
