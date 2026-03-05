@@ -80,3 +80,30 @@ nav ul{
 .venta_libre {
     text-align: center;
 }
+
+.what {
+    position: fixed;
+    width: 100px;
+    background-color: orangered;
+    right: 50px;
+    bottom: 50px;
+}
+
+.contenedor-productos-complementos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.producto{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+  
