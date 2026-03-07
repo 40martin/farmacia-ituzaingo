@@ -211,27 +211,44 @@ nav ul{
 }
 
 .contenedor-suplementos-quelat{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 100px;
-    justify-content: space-evenly;
-    padding: 60px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+    justify-items: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.contenedor-suplementos-quelat img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 10px;
 }
 
 .contenedor-suplementos-quelat> div{
-    width: 200px;
-    text-align: center;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    min-height: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
     align-items: center;
-    max-width: 220px;
-    margin-bottom: 30px;
+    transition: transform 0.3s;
 }
 
 .contenedor-suplementos-quelat p {
     min-height: 80px;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 18px;
 }
 
@@ -257,6 +274,34 @@ nav ul{
 }
 
 .suplementos-telomerina{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.suplementos-graviton-caja{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.suplementos-graviton-frasco{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.suplementos-uridon{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.suplementos-ensure{
     text-align: center;
     display: flex;
     flex-direction: column;
