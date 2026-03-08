@@ -83,11 +83,20 @@ nav ul{
 
 .what {
     position: fixed;
-    width: 100px;
-    background-color: orangered;
-    right: 50px;
-    bottom: 50px;
+    width: 65px;
+    right: 30px;
+    bottom: 30px;
+    height: 65px;
+    z-index: 1000;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+
+
 
 .contenedor-productos-complementos{
     display: flex;
@@ -396,5 +405,136 @@ nav ul{
     line-height: 1.4;
     padding: 0 10px;
 }
+
+.cuerpo-pagina {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.cuidado-personal-texto-derecha {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.subrayado-cuidado-personal {
+    text-decoration: underline;
+}
+
+.texto-cuidado-personal {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.contenedor-cuidado-personal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 20px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.contenedor-cuidado-personal > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor-cuidado-personal img {
+    height: 180px;
+    object-fit: contain;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.contenedor-cuidado-personal p {
+    font-size: 25px;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-top: 15px;
+    padding: 0;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.grupo-input {
+    flex: 1 1 calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo-input label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.mensaje-completo {
+    flex: 1 1 100%;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.btn-enviar {
+    background-color: #0056b3;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #003d7a;
+}
+
+.contenedor-mapas {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 15px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.contenedor-mapas iframe {
+    flex: 1;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
 
   
