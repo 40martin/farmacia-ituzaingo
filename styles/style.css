@@ -536,5 +536,36 @@ input:focus, textarea:focus {
     border-radius: 8px;
 }
 
+.contenedor-medios-de-pago {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 50px auto;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor-medios-de-pago img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.contenedor-medios-de-pago div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-medios-de-pago p {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
 
   
