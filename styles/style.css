@@ -698,23 +698,26 @@ input:focus, textarea:focus {
     margin-bottom: 20px;
 }
 
-.footer nav a img {
+.footer-principal nav a img {
     width: 80px;
-    height: 80px;
-    margin: 0 45px;
-    transition: transform 0.3s ease;
-    object-fit: contain;
+    height: auto;
+    margin: 0 25px;
+    transition: transform 0.3s;
 }
 
-.footer nav {
+.footer-principal nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
 
-.footer h2 {
+.icono-ajustado {
+    width: 100px;
+}
+
+.footer-principal h2 {
     font-size: 15px;
     color: #666;
     margin-bottom: 20px;
