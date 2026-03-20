@@ -92,6 +92,7 @@ img {
 }
 
 .venta_libre_seccion {
+    flex: 2;
     font-size: 25px;
 }
 
@@ -429,8 +430,78 @@ header {
     background-color: #003366;
 }
 
+header {
+    background-color: #004aad;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    color: white;
+}
+
+.contenedor-flex-izq img {
+    width: 180px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: transform 0.3s;
+}
+
+.contenedor-flex-izq img:hover {
+    transform: scale(1.05);
+}
+
+.header-centro {
+    flex: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.venta_libre_seccion ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.venta_libre_seccion a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contenedor-flex {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.venta_libre {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.contenedor-flex img {
+    width: 250px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.venta-libre-texto-derecha {
+    flex: 1;
+    text-align: right;
+    font-size: 0.9rem;
+    font-style: italic;
+    max-width: 200px;
+}
+
 .subrayado-venta-libre{
-    text-decoration: underline;
+    border-bottom: 3px solid #ffcc00;
+    padding-bottom: 10px;
 }
 
 .texto-venta-libre{
@@ -439,28 +510,32 @@ header {
 }
 
 .contenedor-productos-venta-libre{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    column-gap: 2%;
-    row-gap: 40px;
-    padding: 40px;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;    
+    justify-items: center;
 }
 
 .contenedor-productos-venta-libre > div {
-    width: 21%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    min-height: 400px;
-    justify-content: flex-start;
+    transition: transform 0.3 ease;
+}
+
+.contenedor-productos-venta-libre > div:hover {
+    transform: translateY(-5px);
 }
 
 .contenedor-productos-venta-libre img {
-    width: 100%;
-    height: 150px;
+    height: 120px;
+    width: auto;
     object-fit: contain;
     margin-bottom: 15px;
 }
@@ -747,6 +822,25 @@ input:focus, textarea:focus {
     object-fit: contain;
     padding: 5px;
     margin-bottom: 10px;
+}
+
+.redes-sociales-venta-libre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.redes-sociales-venta-libre img {
+    height: 60px;
+    width: auto;
+    transition: transform 0.3s ease;
+    margin: 0 10px;
+}
+
+.redes-sociales-venta-libre img:hover {
+    transform: scale(1.15);
 }
 
 
