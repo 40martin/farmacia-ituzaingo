@@ -69,6 +69,31 @@ img {
 
 .tamano_contacto {
     font-size: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.tamano_contacto ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tamano_contacto ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tamano_contacto ul li a:hover {
+    color: color #d1d1d1;
+    text-decoration: underline;
 }
 
 .cuidado_seccion {
@@ -641,6 +666,13 @@ header {
     padding: 0 10px;
 }
 
+.cuidado_seccion {
+    background-color: #1e4fa4;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
 .cuerpo-pagina {
     display: flex;
     flex-direction: row;
@@ -648,12 +680,16 @@ header {
     justify-content: center;
     gap: 40px;
     margin-top: 40px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
 }
 
 .cuidado-personal-texto-derecha {
     display: flex;
     flex-direction: column;
     max-width: 400px;
+    color: #333333;
 }
 
 .subrayado-cuidado-personal {
@@ -664,14 +700,28 @@ header {
     font-size: 20px;
     line-height: 1.5;
     margin-top: 10px;
+    color: #555555;
 }
 
 .contenedor-cuidado-personal {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px 20px;
-    padding: 20px;
+    padding: 40px 20px;
     margin-top: 50px;
+    background-color: #ffffff;
+}
+
+.cuidado_seccion ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.cuidado_seccion ul li a:hover {
+    color: #ffd700;
 }
 
 .contenedor-cuidado-personal > div {
@@ -679,21 +729,40 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    transition: transform 0.4s ease;
+    color: #333333;
+    padding: 15px;
+    cursor: pointer;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.contenedor-cuidado-personal > div:hover {
+    transform: scale(1.1);
 }
 
 .contenedor-cuidado-personal img {
     height: 180px;
-    object-fit: contain;
     width: auto;
-    margin-bottom: 10px;
+    max-width: 100%;
+    object-fit: contain;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
 }
 
 .contenedor-cuidado-personal p {
-    font-size: 25px;
+    font-size: 18px;
     line-height: 1.4;
     font-weight: 500;
     margin-top: 15px;
-    padding: 0;
+    padding: 0 10px;
+    color: #444444;
+    text-align: center;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .formulario-contacto {
@@ -702,42 +771,60 @@ header {
     gap: 20px;
     max-width: 800px;
     margin: 40px auto;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .grupo-input {
     flex: 1 1 calc(50% - 20px);
     display: flex;
     flex-direction: column;
+    color: #333333;
 }
 
 .grupo-input label {
     font-weight: bold;
     margin-bottom: 8px;
     display: block;
+    color: #444444;
+    font-size: 14px;
+    text-align: left;
 }
 
 .mensaje-completo {
     flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
 }
 
 input, textarea {
     padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
     font-size: 1rem;
     margin-top: 5px;
+    width: 100%;
+    background-color: #fcfcfc;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 textarea {
-    height: 120px;
+    height: 150px;
     resize: none;
+    padding: 15px;
+    border-radius: 12px;
+    line-height: 1.5;
+    font-family: inherit;
 }
 
 input:focus, textarea:focus {
     border-color: #007bff;
     outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    background-color: #ffffff;
 }
 
 .btn-enviar {
@@ -745,30 +832,42 @@ input:focus, textarea:focus {
     color: white;
     padding: 12px 30px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     font-weight: bold;
-    transition: background-color 0.3s;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s;
+    display: block;
+    margin: 20px auto 0;
 }
 
 .btn-enviar:hover {
-    background-color: #003d7a;
+    background-color: #004494;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .contenedor-mapas {
     display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 15px;
-    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 20px;
     margin-bottom: 40px;
+    background-color: #ffffff;
 }
 
 .contenedor-mapas iframe {
     flex: 1;
     height: 300px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.contenedor-mapas iframe:hover {
+    transform: translateY(-5px);
 }
 
 .contenedor-medios-de-pago {
@@ -901,6 +1000,50 @@ input:focus, textarea:focus {
 }
 
 .redes-sociales-ofertas a img:hover {
+    transform: scale(1.2);
+}
+
+.redes-sociales-cuidado-personal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+    padding-bottom: 50px;
+} 
+
+.redes-sociales-cuidado-personal img {
+    width: 60px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.redes-sociales-cuidado-personal img:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.redes-sociales-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+
+.redes-sociales-contacto a img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.redes-sociales-contacto a img:hover {
     transform: scale(1.2);
 }
 
