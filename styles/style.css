@@ -352,6 +352,47 @@ header {
     padding: 15px;
 }
 
+.medios {
+    color: #ffffff;
+}
+
+.medios_seccion ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 80px;
+    align-items: center;
+}
+
+.medios_seccion ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.medios_seccion ul li a:visited {
+    color: #ffffff;
+}
+
+.contenedor-medios-de-pago p {
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.medios-de-pago-modo, 
+.medios-de-pago-uala, 
+.medios-de-pago-tarjeta-visa, 
+.medios-de-pago-tarjetas-varias-uno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    text-align: center;
+}
+
 .contenedor-medios-de-pago-varios{
     display: flex;
     flex-direction: row;
@@ -373,17 +414,25 @@ header {
 
 .medios-de-pago-varios img {
     width: 120px;
-    height: auto;
+    height: 80px;
     margin: 10px;
     object-fit: contain;
     filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.1));
 }
 
 .medios-de-pago-varios a {
-    color: inherit;
+    color: #ffffff;
     text-decoration: none;
     display: inline-block;
+    font-weight: bold;
+    margin-top: 10px;
 } 
+
+.medios-de-pago-varios a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    transform: scale(1.05);
+}
 
 .contenedor-flex{
     display: flex;
@@ -1044,6 +1093,26 @@ footer {
 }
 
 .redes-sociales-contacto a img:hover {
+    transform: scale(1.2);
+}
+
+.redes-sociales-medios-de-pago {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin-top: 35px;
+    padding-bottom: 20px;
+}
+
+.redes-sociales-medios-de-pago img {
+    width: 70px;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+.redes-sociales-medios-de-pago img:hover {
     transform: scale(1.2);
 }
 
