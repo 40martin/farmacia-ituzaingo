@@ -383,41 +383,43 @@ header {
     margin-top: 10px;
 }
 
-.medios-de-pago-modo, 
-.medios-de-pago-uala, 
-.medios-de-pago-tarjeta-visa, 
-.medios-de-pago-tarjetas-varias-uno {
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
+.medios-de-pago-varios p {
+    font-weight: bold;
+    color: #333333;
+    font-size: 14px;
     text-align: center;
+    margin: 0;
+    line-height: 1.4;
 }
 
-.contenedor-medios-de-pago-varios{
+.contenedor-medios-de-pago-varios {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
 }
 
-.medios-de-pago-varios{
-    flex: 1;
+.medios-de-pago-varios {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 15px;
+    flex: 1 1 200px;
+    max-width: 250px;
+    margin: 10px;
 }
 
 .medios-de-pago-varios img {
-    width: 120px;
-    height: 80px;
-    margin: 10px;
+    height: 65px;
+    width: auto;
+    max-width: 180px;
     object-fit: contain;
-    filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.1));
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .medios-de-pago-varios a {
