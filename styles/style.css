@@ -377,26 +377,49 @@ header {
     color: #ffffff;
 }
 
+.contenedor-medios-de-pago {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 20px;
+    align-items: stretch;
+}
+
+.contenedor-medios-de-pago > div {
+    background-color: #ffffff;
+    border: 2px solid #f0f0f0;
+    border-radius: 20px;
+    padding: 25px;
+    width: 200px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
 .contenedor-medios-de-pago p {
-    color: #ffffff;
+    color: #333333;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 15px;
+    font-size: 1.1rem;
 }
 
 .medios-de-pago-varios p {
-    font-weight: bold;
-    color: #333333;
-    font-size: 14px;
-    text-align: center;
-    margin: 0;
-    line-height: 1.4;
+    margin-top: 10px;
+    line-height: 1.2;
 }
 
 .contenedor-medios-de-pago-varios {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 30px;
     padding: 20px;
 }
@@ -408,32 +431,44 @@ header {
     text-align: center;
     flex: 1 1 200px;
     max-width: 250px;
-    margin: 10px;
+    height: 300px;
+    background-color: #ffffff;
+    border: 4px solid #000000;
+    border-radius: 15px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
 }
 
 .medios-de-pago-varios img {
-    height: 65px;
+    height: 80px;
     width: auto;
-    max-width: 180px;
+    max-width: 100%;
     object-fit: contain;
     margin-bottom: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .medios-de-pago-varios a {
-    color: #ffffff;
+    color: #333333;
     text-decoration: none;
     display: inline-block;
     font-weight: bold;
     margin-top: 10px;
+    transition: color 0.3s;
 } 
 
+.medios-de-pago-varios:hover {
+    transform: scale(1.1);
+    border-color: #007bff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    background-color: #ffffff;
+}
+
 .medios-de-pago-varios a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-    transform: scale(1.05);
+    color: #007bff;
+    text-decoration: none;
 }
 
 .contenedor-flex{
@@ -1117,6 +1152,71 @@ footer {
 .redes-sociales-medios-de-pago img:hover {
     transform: scale(1.2);
 }
+
+.ofertas-limitadas {
+    background-color: #ff4757;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-top: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7);
+    }
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(255, 71, 87, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 71, 87, 0);
+    }
+}
+
+.contenedor-medios-de-pago > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 5px solid #000000; 
+    border-radius: 20px;
+    padding: 20px;
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+.contenedor-medios-de-pago > div:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 0px rgba(0,0,0,0.2); 
+    z-index: 10;
+}
+
+.contenedor-medios-de-pago img {
+    max-width: 140px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.contenedor-medios-de-pago p {
+    font-weight: bold;
+    color: #000;
+    margin-top: 15px;
+}
+
+
 
 
   
