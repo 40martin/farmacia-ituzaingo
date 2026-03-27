@@ -686,8 +686,6 @@ header {
     height: 60px;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
 }
 
 .contenedor-ofertas {
@@ -1214,6 +1212,71 @@ footer {
     font-weight: bold;
     color: #000;
     margin-top: 15px;
+}
+
+.btn-venta-libre {
+    display: block;
+    padding: 12px 15px;
+    margin: 10px auto;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #0056b3;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+}
+
+.btn-venta-libre:hover {
+    background-color: #004494;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-venta-libre:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .contenedor, section, main {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+[class*="contenedor-"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    flex-direction: column;
+    padding: 0;
+}
+
+nav li {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.btn-venta-libre, button, .boton-general {
+    width: 90%;
+    font-size: 18px;
+    padding: 15px;
+}
 }
 
 
