@@ -1,0 +1,89 @@
+@import "../utilities/variables";
+@import "components/header";
+@import "components/footer";
+@import "partials/contacto";
+@import "partials/cuidado_personal";
+@import "partials/home";
+@import "partials/medios_de_pago";
+@import "partials/ofertas";
+@import "partials/suplementos";
+@import "partials/venta_libre";
+
+
+@media (max-width: 768px) {
+    
+    .container-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+        gap: 15px;
+
+        nav ul {
+            list-style: none;   
+            padding: 0;          
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+
+            li a {
+                font-size: 1.1rem;
+                text-decoration: none;
+                color: inherit; 
+            }
+        }
+
+        
+        img {
+            width: 65px; 
+            height: auto;
+        }
+    }
+
+    
+    .contenedor-productos, 
+    .contenedor-productos-ofertas, 
+    .contenedor-productos-venta-libre,
+    .contenedor-cuidado-personal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+
+        
+        .producto-card, 
+        [class^="ofertas-"], 
+        [class^="venta-libre-"],
+        [class^="cuidado-personal-"] {
+            width: 90% !important;
+            max-width: 320px;
+            margin: 0 auto;
+        }
+    }
+
+    
+    img, iframe {
+        max-width: 100%;
+        height: auto;
+    }
+
+    
+    .what, .wpp {
+        width: 55px;
+        height: 55px;
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        z-index: 1000;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .producto-card, [class^="ofertas-"] {
+        width: 45% !important; 
+    }
+}
+

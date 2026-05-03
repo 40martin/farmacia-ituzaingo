@@ -1,0 +1,22 @@
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 5%;
+
+    h1 {
+        color: $color-blanco;
+        font-size: $t-titulo;
+        margin: 0;
+        padding: 0;
+        background-color: $color-transparente;
+    }
+
+    .titulo_index {
+        margin: 0;
+        font-size: $t-subtitulo;
+        color: $color-blanco;
+    }
+}
